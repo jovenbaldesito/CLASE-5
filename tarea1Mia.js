@@ -2,29 +2,15 @@
 //TAREA: crear un formulario donde un usuario pueda ingresar su salario anual.
 //cuando el usuario haga click en el botón "calcular", mostrar el salario mensual
 // en una caja de texto deshabilitada. --> <input type="text" disabled id="salario-mensual"/>
-
-document.querySelector('#calcular-salario-mensual').onclick = function () {
-    const salarioAnual = Number(document.querySelector('#salario-anual').value);
-    const salarioMensual = calcularSalarioMensual(salarioAnual);
-
-    document.querySelector('#salario-mensual').value = salarioMensual;
-
-    return false;
+function calcularSalarioAnual(salarioMensual) {
+    return salarioMensual * 12;
 }
 
-    function calcularSalarioMensual(salarioAnual) {
-        return salarioAnual / 12;
-    }
-
-document.querySelector('#calcular-salario-anual2').onclick = function() {
-    const salarioMensual = Number(document.querySelector('#salario-mensual2').value);
+document.querySelector('.calcular-salario').onclick = function () {
+    const salarioMensual = Number(document.querySelector('.salario-mensual').value);
     const salarioAnual = calcularSalarioAnual(salarioMensual);
 
-    document.querySelector('#salario-anual2').value = salarioAnual;
+    document.querySelector('.salario-anual').value = salarioAnual;
 
     return false;
 }
-
-    function calcularSalarioAnual(salarioMensual) {
-        return salarioMensual * 12;
-    }
