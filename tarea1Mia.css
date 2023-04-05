@@ -31,14 +31,7 @@ form {
     border-radius: 10%;
 }
 
-#label1 {
-    display: block;
-    font-size: 22px;
-    background-color: transparent;
-    color: black;
-}
-
-#label2 {
+#label1, #label2 {
     display: block;
     font-size: 22px;
     background-color: transparent;
