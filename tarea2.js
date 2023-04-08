@@ -19,15 +19,6 @@ Ejemplo form:
 document.querySelector('#ingresar').onclick = function () {
     const $nombreUsuario = document.querySelector('#nombre-usuario').value;
     const $edadUsuario = document.querySelector('#edad-usuario').value;
-    document.querySelector('#resultado').textContent = `Hola, tu nombre es ${$nombreUsuario} y tu edad es ${$edadUsuario}`;
-    document.querySelector('h1').textContent = `Bienvenido ${$nombreUsuario}`;
-    return false;
+    document.querySelector('#resultado').textContent = `${$nombreUsuario}, tenés ${$edadUsuario} años`;
+    document.querySelector('h1').textContent = `Bienvenido ${$nombreUsuario}!`;
 }
-
-/*
-    document.querySelector('#todo').value = informacionTotal;
-    bienvenida.innerText = `Bienvenido ${$nombreUsuario}`
-    bienvenida.style.color = 'black'
-    bienvenida.style.backgroundColor = 'orange';
-    bienvenida.style.fontSize = '50px';
-*/
